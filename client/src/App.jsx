@@ -3,7 +3,7 @@ import Main from './components/Main/Main'
 function App() {
 
   return (
-   <div className='flex items-center justify-center bg-[#e2e1dd] h-[100vh]'>
+   <div className='font-segoe-ui  flex items-center justify-center bg-[#e2e1dd] h-[100vh] '>
       <Main />
    </div>
   )

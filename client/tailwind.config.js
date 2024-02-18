@@ -6,7 +6,19 @@ export default {
   ],
   theme: {
     extend: {},
+  
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.font-segoe-ui': {
+          fontFamily: 'Segoe UI',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 }
+
 
