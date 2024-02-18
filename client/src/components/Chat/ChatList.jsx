@@ -21,13 +21,14 @@ function ChatList() {
             timeStamp: 'today',
         }
     ])
-  return (
-    <div className="w-[98%] h-[80vh] mt-2 overflow-y-scroll custom-scrollbar  ">
-        {chatList.map((chat)=>(
-            <SingleChat key={chat.id} chat={chat} />
-        ))}
-    </div>
-  )
+
+    return (
+        <div className="w-[98%] h-[80vh] mt-2 overflow-y-scroll custom-scrollbar  ">
+            {chatList.map((chat)=>(
+                <SingleChat  key={chat.id} chat={chat} />
+            ))}
+        </div>
+    )
 }
 
 export default ChatList

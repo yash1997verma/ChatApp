@@ -5,13 +5,12 @@ import WelcomeMessage from "./WelcomeMessage"
 
 function Messages() {
   return (
-    <div  className="flex flex-col  grow-[0.7] py-4 gap-2 ">
+    <div  className=" flex flex-col grow-[0.7] py-4 px-2  gap-2 ">
       {/* header of messages */}
       <MessagesHeader />
 
       {/* message in chat */}
-      <WelcomeMessage />
-      {/* <CurrentMessages /> */}
+      <CurrentMessages />
 
       {/* type new message */}
       <NewMessage />

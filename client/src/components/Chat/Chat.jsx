@@ -4,7 +4,7 @@ import ChatList from "./ChatList"
 
 function Chat() {
   return (
-    <div className="grow-[0.3] flex-col  py-4 px-2 ">
+    <div className=" flex flex-col grow-[0.3] py-4 px-2  gap-2 ">
         {/* chat header icons */}
         <ChatHeader />
 
@@ -12,9 +12,7 @@ function Chat() {
         <ChatSearch />
 
         {/* chatList */}
-        <div>
-            <ChatList />
-        </div>
+        <ChatList />
     </div>
   )
 }
